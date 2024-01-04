@@ -1,4 +1,5 @@
-import { FaFacebook, FaInstagram, FaLinkedin} from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+
 
 import styles from './Footer.module.css';
 
@@ -7,21 +8,18 @@ function Footer(){
         <Footer>
             <ul>
                 <li>
-                    <a href="https://www.facebook.com/Costs-100909090/" target="_blank" rel="noreferrer">
-                        <FaFacebook className={styles.icon}/>
-                    </a>
+                    <FaFacebookF/>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/costs_/" target="_blank" rel="noreferrer">
-                        <FaInstagram className={styles.icon}/>
-                    </a>
+                    <FaInstagram/>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/company/costs/" target="_blank" rel="noreferrer">
-                        <FaLinkedin className={styles.icon}/>
-                    </a>
+                    <FaLinkedinIn/>
                 </li>
             </ul>
+            <p className={styles.copy_right}>
+                <span>Coins</span> &copy; 2023
+            </p>
         </Footer>
     );
 }
